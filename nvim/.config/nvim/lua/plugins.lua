@@ -16,6 +16,9 @@ return {
          columns = {
             "icon",
          },
+         view_options = {
+            show_hidden = true,
+         },
          buf_options = {
             buflisted = false,
             bufhidden = "hide",
@@ -25,8 +28,8 @@ return {
             signcolumn = "no",
             cursorcolumn = false,
             foldcolumn = "0",
-            number = false,
-            relativenumber = false,
+            number = true,
+            relativenumber = true,
          },
          delete_hidden_buffers_after = 2000,
       },
