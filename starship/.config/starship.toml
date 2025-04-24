@@ -2,8 +2,8 @@ format = """$directory$character"""
 right_format = """$all"""
 
 [character]
-vicmd_symbol = "[N] >>>"
 success_symbol = '[➜](bold green)'
+vicmd_symbol = "[N](bold blue) "
 
 [git_branch]
 format =  '[$symbol$branch(:$remote_branch)]($style) '
