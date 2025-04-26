@@ -34,11 +34,6 @@ return {
          delete_hidden_buffers_after = 2000,
       },
       dependencies = { "nvim-tree/nvim-web-devicons" },
-      keys = {
-         { "-", "<cmd>Oil<cr>", desc = "Open Oil in main buffer" },
-         { "<leader>ef", "<cmd>Oil --float<cr>", desc = "Open Oil in floating window" },
-         { "q", "<cmd>close<cr>", desc = "Close Oil window", mode = "n" },
-      },
    },
 
    {
@@ -168,5 +163,19 @@ return {
       keys = {
          { "<leader>lg", "<cmd>LazyGit<cr>", desc = "Open lazy git" },
       },
+   },
+
+   {
+      "echasnovski/mini.nvim",
+      version = "*",
+      config = function()
+         require("mini.files").setup({})
+      end,
+   },
+
+   {
+      "MeanderingProgrammer/render-markdown.nvim",
+      opts = {},
+      dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.icons" },
    },
 }

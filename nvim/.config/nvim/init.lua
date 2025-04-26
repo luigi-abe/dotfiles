@@ -20,3 +20,11 @@ require("lazy").setup("plugins", {
       notify = false,
    },
 })
+
+vim.keymap.set("n", "<leader>ef", function()
+   local MiniFiles = require("mini.files")
+   local _ = MiniFiles.close() or MiniFiles.open(vim.api.nvim_buf_get_name(0), false)
+   vim.defer_fn(function()
+      MiniFiles.reveal_cwd()
+   end, 30)
+end, { desc = "Open mini.files (root + reveal current file)" })
