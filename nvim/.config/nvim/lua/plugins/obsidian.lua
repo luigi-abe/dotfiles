@@ -55,5 +55,28 @@ return {
             enable = false,
          },
       })
+      vim.api.nvim_create_autocmd("FileType", {
+         pattern = "markdown",
+         callback = function()
+            vim.opt_local.wrap = true
+            vim.opt_local.linebreak = true
+            vim.opt_local.conceallevel = 2
+
+            local map = function(mode, lhs, rhs)
+               vim.keymap.set(mode, lhs, rhs, { buffer = true, silent = true })
+            end
+
+            map("n", "j", "gj")
+            map("n", "k", "gk")
+            map("n", "0", "g0")
+            map("n", "^", "g^")
+
+            map("n", "A", "$a")
+            map("n", "I", "^i")
+
+            map("n", "$", "g$")
+            map("n", "_", "g^")
+         end,
+      })
    end,
 }

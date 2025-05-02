@@ -19,6 +19,7 @@ return {
       { "L3MON4D3/LuaSnip" }, -- Required
       { "rafamadriz/friendly-snippets" },
       { "hrsh7th/cmp-buffer" },
+      { "github/copilot.vim" },
       { "hrsh7th/cmp-path" },
       { "hrsh7th/cmp-cmdline" },
       { "saadparwaiz1/cmp_luasnip" },
@@ -160,20 +161,6 @@ return {
             ["<C-Space>"] = cmp.mapping.complete(),
             ["<C-f>"] = cmp_action.luasnip_jump_forward(),
             ["<C-b>"] = cmp_action.luasnip_jump_backward(),
-            ["<Tab>"] = cmp.mapping(function(fallback)
-               if cmp.visible() then
-                  cmp.select_next_item()
-               else
-                  fallback()
-               end
-            end, { "i", "s" }),
-            ["<S-Tab>"] = cmp.mapping(function(fallback)
-               if cmp.visible() then
-                  cmp.select_prev_item()
-               else
-                  fallback()
-               end
-            end, { "i", "s" }),
          }),
       })
    end,
