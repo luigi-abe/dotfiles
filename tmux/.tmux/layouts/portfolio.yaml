@@ -1,10 +1,11 @@
 session_name: portfolio
 start_directory: ~/coding/portfolio/
 windows:
-  - window_name: portfolio
-    layout: tiled
+  - window_name: editor
     panes:
       - shell_command:
           - nvim
+  - window_name: temrinal
+    panes:
       - shell_command:
           - pnpm run dev
