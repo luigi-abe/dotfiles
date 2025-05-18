@@ -22,6 +22,7 @@ Plug 'preservim/vim-markdown' "for markdown
 Plug 'prabirshrestha/vim-lsp' "lsp
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } "fzf
 Plug 'junegunn/fzf.vim' "fzf
+Plug 'tpope/vim-fugitive' "for git
 call plug#end()
 
 "share clipboard across system
