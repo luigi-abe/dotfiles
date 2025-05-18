@@ -76,6 +76,16 @@ return {
 
             map("n", "$", "g$")
             map("n", "_", "g^")
+            map("n", "V", "vgVV")
+
+            map("v", "j", "gj")
+            map("v", "k", "gk")
+            map("v", "0", "g0")
+            map("v", "^", "g^")
+            map("v", "A", "$a")
+            map("v", "I", "^i")
+            map("v", "$", "g$")
+            map("v", "_", "g^")
          end,
       })
    end,

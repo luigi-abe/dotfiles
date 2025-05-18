@@ -1,7 +1,9 @@
 return {
-   {
-      "github/copilot.vim",
-   },
+   -- { "github/copilot.vim" },
+
+   { "folke/zen-mode.nvim" },
+
+   { "junegunn/limelight.vim" },
 
    {
       "windwp/nvim-autopairs",
