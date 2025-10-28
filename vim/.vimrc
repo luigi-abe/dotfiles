@@ -15,13 +15,9 @@ set ic
 
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree' "for tree
-Plug 'junegunn/goyo.vim' "for zenmode
 Plug 'christoomey/vim-tmux-navigator' "for tmux motions
 Plug 'godlygeek/tabular' "for markdown
 Plug 'preservim/vim-markdown' "for markdown  
-Plug 'prabirshrestha/vim-lsp' "lsp
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } "fzf
-Plug 'junegunn/fzf.vim' "fzf
 Plug 'tpope/vim-fugitive' "for git
 call plug#end()
 
@@ -44,10 +40,7 @@ set background=dark
 let mapleader = " "
 
 nnoremap <leader>ef :NERDTreeToggle<CR>
-nnoremap <leader>zm :Goyo 100<CR>
-nnoremap <leader>ff :FZF<CR>
 inoremap jk <Esc>
-nnoremap <leader>nh :nohl<CR>
 nnoremap x "_x
 nnoremap <leader>PI :PlugInstall<CR>
 

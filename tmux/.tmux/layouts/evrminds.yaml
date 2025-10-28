@@ -1,0 +1,11 @@
+session_name: evrminds
+start_directory: ~/coding/work/evrminds-frontend/
+windows:
+  - window_name: editor
+    panes:
+      - shell_command:
+          - nvim
+  - window_name: temrinal
+    panes:
+      - shell_command:
+          - pnpm run dev

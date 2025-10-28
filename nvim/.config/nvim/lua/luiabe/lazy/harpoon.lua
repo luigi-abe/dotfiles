@@ -36,5 +36,6 @@ return {
       keymap("n", "<leader>1", openSpecificFileObj(1).open, { desc = openSpecificFileObj(1).desc })
       keymap("n", "<leader>2", openSpecificFileObj(2).open, { desc = openSpecificFileObj(2).desc })
       keymap("n", "<leader>3", openSpecificFileObj(3).open, { desc = openSpecificFileObj(3).desc })
+      keymap("n", "<leader>4", openSpecificFileObj(4).open, { desc = openSpecificFileObj(4).desc })
    end,
 }
