@@ -17,7 +17,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 require("lazy").setup({
-  spec = "luiabe.lazy",
+  {import = 'luiabe.plugins'}, {import = 'luiabe.plugins.lsp'},
   install = { colorscheme = { "habamax" } },
   checker = { enabled = true },
 })
